@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+    <title>NumberScrapes</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome To NumberScrapes</h1>
+        <p1>This is a tool for generating different arrangements of numbers.</p1>
+        <div class="options">
+            <div class="option">
+                <h2>Generate 4 Numbers</h2>
+                <p>Generate arrangements of 4 numbers.</p>
+                <button onclick="redirectToGeneratePage(4)">Generate</button>
+            </div>
+            <div class="option">
+                <h2>Generate 10 Numbers</h2>
+                <p>Generate arrangements of 10 numbers.</p>
+                <button onclick="redirectToGeneratePage(10)">Generate</button>
+            </div>
+            <div class="option">
+                <h2>Generate 16 Numbers</h2>
+                <p>Generate arrangements of 16 numbers.</p>
+                <button onclick="redirectToGeneratePage(16)">Generate</button>
+            </div>
+        </div>
+    </div>
+    <script>
+    function redirectToGeneratePage(num) {
+        window.location.href = `/generator.html?num=${num}`;
+    }</script>
+</body>
+</html>
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+    <link rel="stylesheet" href="/src/style.css"> 
+
+    <title>Number Generator</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">Home</a>
+    </header>
+    <div class="container">
+        <div class="generator">
+            <input type="text" placeholder="Enter numbers" id="inputBox" maxlength="16">
+
+            <div>
+                <button onclick="addToInput('7')">7</button>
+                <button onclick="addToInput('8')">8</button>
+                <button onclick="addToInput('9')">9</button>
+            </div>
+            <div>
+                <button onclick="addToInput('4')">4</button>
+                <button onclick="addToInput('5')">5</button>
+                <button onclick="addToInput('6')">6</button>
+            </div>
+            <div>
+                <button onclick="addToInput('1')">1</button>
+                <button onclick="addToInput('2')">2</button>
+                <button onclick="addToInput('3')">3</button>
+            </div>
+            <div>
+                <button onclick="addToInput('0')">0</button>
+                <button class="generateBtn" onclick="generateArrangements()">Generate</button>
+                <button class="operator" onclick="deleteLast()">Delete</button>
+            </div>
+        </div>
+    </div>
+    <div class="output-container" id="output">
+        <p>Possible Arrangements:</p>
+    </div>
+
+    <script src="src/generator.js"></script> 
+</body>
+</html>

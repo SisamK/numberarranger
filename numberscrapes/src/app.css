@@ -1,0 +1,71 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: bisque; 
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+p1 {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.options {
+  display: inline-flex;
+ 
+  gap: 20px;
+}
+
+.option {
+  flex-basis: calc(33.33% - 20px);
+  background-color: #92eefa;
+  padding: 20px;
+  border-radius: 20px;
+  flex-grow: 1;
+}
+
+.option h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.option p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.option button {
+  padding: 10px 20px;
+  background-color: #701274;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.option button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 768px) {
+  .option {
+      flex-basis: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .option {
+      flex-basis: 100%;
+  }
+}

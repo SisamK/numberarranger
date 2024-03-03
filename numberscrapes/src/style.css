@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #f5a3f8, #e3f7b5);
+}
+header{
+    position: relative;
+}
+.generator {
+    border: 1px solid #eafa07;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(20, 86, 218, 0.5);
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+input {
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(1, 6, 43, 0.829);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: #0a0000;
+}
+
+input::placeholder {
+    color: #ffffff;
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #000e0b;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(0, 2, 17, 0.856);
+    cursor: pointer;
+}
+
+.generateBtn {
+    width: fit-content;
+    background: linear-gradient(45deg, #f5a3f8, #e3f7b5);
+}
+
+.operator {
+    color: #050c00;
+}
+
+.container {
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+.generator {
+    margin-bottom: 20px;
+}
+
+.output-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+    overflow: auto;
+}
+
+.output-container p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.arrangement {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 12px 12px 0;
+}
